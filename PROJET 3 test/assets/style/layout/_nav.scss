@@ -1,0 +1,96 @@
+.welcome{
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 74.1vh;
+    width: 100%;
+    margin-top: 180px;
+    color: $color1;
+    opacity:0;
+    transform: translateY(40px);
+    animation: welcomeanim 1.5s forwards;
+
+    @keyframes welcomeanim {
+     to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+   }
+   h1{
+     text-transform: uppercase;
+     font-size: 4rem;
+     letter-spacing: 7px;
+     font-weight: lighter;
+   }
+   p{
+    margin-top: 40px;
+    font-family: $font2;
+   }
+   i{
+     border: 1.7px solid $color1;
+     padding: 15px 17.5px 15px 17.5px;
+     border-radius: 50%;
+     margin-top: 67px;
+     transform: scale(1.2);
+     color: $color1; 
+    }
+    
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    width: 1105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.258);
+    color: $color1;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    
+
+        .nav-left ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        &:hover li:not(:hover){
+            background: transparent;
+            color: $color1;
+        }
+                li{
+                    padding: 25px 15px; 
+                    &:first-child{
+                        background: $color1;
+                        color: $color2;
+
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background: $color1;
+                        color: $color2;
+                    }
+                }
+            }
+    
+        .nav-right ul{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            transform: scale(1.5);
+            padding-right: 40px;
+        }
+                li{
+                    padding: 25px 18px; 
+                    letter-spacing: 2px; 
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+
+            }

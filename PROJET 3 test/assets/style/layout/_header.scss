@@ -1,0 +1,122 @@
+header{
+     .header-container1 h3{
+        text-align: center;
+        font-family: $font2;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        padding: 80px;
+        position: relative;
+
+        &:before{
+            content:"";
+            position: absolute;
+            background: rgba(128, 128, 128, 0.2);
+            height: 1px;
+            width: 30%;
+            top:90px;
+            left: 9.5%;  
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            background: rgba(128, 128, 128, 0.2);
+            height: 1px;
+            width: 30%;
+            top:90px;
+            right: 9.5%;
+        }
+    
+        
+    }
+    .header-container1{
+        display: block;
+        margin: 0 auto;
+    }
+    .text-header1{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    h1{
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: lighter;
+        letter-spacing: 3px;
+    }
+    p{
+        font-family: $font2;
+        font-weight: lighter;
+        
+        margin: 40px auto;
+        line-height: 40px;
+
+    }
+    
+    .photo-header1 img {
+        display: flex;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+       
+    }
+    .header-container1 button{
+        margin: 50px auto;
+    }
+
+    .header-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 200px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: rgba(128, 128, 128, 0.2);
+            width: 100%;
+            top: -100px;
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            height: 116%;
+            background: rgba(128, 128, 128, 0.2);
+            width: 1px;
+            top: -100px;
+        }
+
+    }
+    .header-container{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    h3{
+        font-family: $font2;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        
+    }
+    h2{
+        width: 40%;
+        letter-spacing: 3px;
+        margin: 20px auto;
+
+    }
+    p{
+        font-size: 0.9rem;
+        text-align: left;
+        font-weight: lighter;
+        width: 80%;
+        line-height: 30px;  
+    }
+    img{
+        width: 80%;
+        }
+    button {
+        margin-bottom: 50px;
+    }
+    } 
+}

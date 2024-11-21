@@ -1,0 +1,108 @@
+.footer-container{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    &::before {
+        content:"";
+      position: absolute;
+      height: 1px;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.2);
+      top: 50%;
+      right: 0;
+    }
+    &::after {
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.2);
+    top: 75%;
+    right: 0;
+    }
+    .footer-left{
+        width: 50%;
+        padding: 4%;
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-template-rows: 1fr 1fr 250px 1fr;
+        .form{
+            width: 100%;
+            label{
+                display: block;
+                color: $color3;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+                margin: 10px 0;
+                margin-left: 7px;
+            }
+            input {
+                width: 250%;
+                height: 45px;
+                background: transparent;
+                border: 1px solid rgba(128, 128, 128, 0.351);
+                border-radius: 5px;
+                margin: 5px;
+            }
+            textarea{
+                width: 250%;
+                height: 200px;
+                background: transparent;
+                border: 1px solid rgba(128, 128, 128, 0.351);
+                border-radius: 5px;
+                margin: 5px;
+                resize: none;
+            }
+            button{
+                background: transparent;
+                text-decoration: none;
+                color: grey;
+                border: 2px solid grey;
+                
+            }
+        }
+
+
+    }
+    .footer-right{
+        width: 50%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+        .infos{
+            display: grid;
+            align-items: center;
+            justify-items: start;
+            grid-template-columns: 30% 70%;
+            label{
+                color: $color3;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+                margin: 0 auto;
+            }
+            p {
+                font-family: $font2;
+                font-size: 0.8rem;
+                color: rgb(160, 156, 156) ;  
+            }
+            ul {
+                display: flex;
+                li{
+                    padding: 10px 13px;
+                    margin: 0 10px;
+                    border: 1px solid rgba(160, 156, 156, 0.341);
+                    border-radius: 50%;
+                    #fb{
+                        padding: 0 2.5px;
+                    }
+                }
+               
+            }
+        }
+    }
+
+}
